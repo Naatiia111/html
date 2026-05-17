@@ -14,24 +14,34 @@
     <div>
         <p> რეგისტრაცია </p>
         <form>
-            <label for="name">სახელი:</label> <br/>
-            <input type="text" placeholder="შეიყვანეთ თქვენი სახელი" id="name"> <br/>
-            <label for="email">ელ-ფოსტა:</label> <br/>
-            <input type="email" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა" id="email" required> <br/>
-            <label for="password">პაროლი:</label> <br/>
-            <input type="password" placeholder="შეიყვანეთ თქვენი პაროლი" id="password" required minlength="1" maxlength="8"> <br/>
-            <input type="checkbox" id="agree" required>
-            <label for="agree">ვეთანხმები წესებს და პირობებს</label> <br/>
-            <label for="სქესი">სქესი:</label> 
-               <select id="სქესი">
+            <div>
+             <label for="name">სახელი:</label> <br/>
+             <input type="text" placeholder="შეიყვანეთ თქვენი სახელი" id="name"> <br/>
+            </div>
+            <div>
+             <label for="email">ელ-ფოსტა:</label> <br/>
+             <input type="email" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა" id="email" required> <br/>
+            </div>
+            <div>
+             <label for="password">პაროლი:</label> <br/>
+             <input type="password" placeholder="შეიყვანეთ თქვენი პაროლი" id="password" required minlength="1" maxlength="8"> <br/>
+            </div>
+            <div>
+             <input type="checkbox" id="agree" required>
+             <label for="agree">ვეთანხმები წესებს და პირობებს</label> <br/>
+            </div>
+            <div>
+               <label for="სქესი">სქესი:</label> 
+                <select id="სქესი">
                  <option value="" disabled selected>სქესი</option>
-                  <option value="women" >ქალი</option>
-                  <option value="men">კაცი</option>
-                 <option value="other" >სხვა</option>
+                 <option value="women" >ქალი</option>
+                 <option value="men">კაცი</option>
+                <option value="other" >სხვა</option>
 
                 </select> 
-              </br>
-            </br>
+              <br/>
+             <br/>
+            </div>
             <button type="submit">რეგისტრაცია</button>
 
         </form>
