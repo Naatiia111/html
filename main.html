@@ -8,14 +8,51 @@
 </head>
 <body>
    <header>
-       <h1 style="color: rgb(145, 40, 243); text-align: center;">ჰარლი</h1>
+       <h1>ჰარლი</h1>
     </header>
+
+    <div>
+        <p> რეგისტრაცია </p>
+        <form>
+            <div>
+             <label for="name">სახელი:</label> <br/>
+             <input type="text" placeholder="შეიყვანეთ თქვენი სახელი" id="name"> <br/>
+            </div>
+            <div>
+             <label for="email">ელ-ფოსტა:</label> <br/>
+             <input type="email" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა" id="email" required> <br/>
+            </div>
+            <div>
+             <label for="password">პაროლი:</label> <br/>
+             <input type="password" placeholder="შეიყვანეთ თქვენი პაროლი" id="password" required minlength="1" maxlength="8"> <br/>
+            </div>
+            <div>
+             <input type="checkbox" id="agree" required>
+             <label for="agree">ვეთანხმები წესებს და პირობებს</label> <br/>
+            </div>
+            <div>
+               <label for="სქესი">სქესი:</label> 
+                <select id="სქესი">
+                 <option value="" disabled selected>სქესი</option>
+                 <option value="women" >ქალი</option>
+                 <option value="men">კაცი</option>
+                <option value="other" >სხვა</option>
+
+                </select> 
+              <br/>
+             <br/>
+            </div>
+            <button type="submit">რეგისტრაცია</button>
+
+        </form>
+
+    </div>
 
     <section>
         <div>
             <h2>სიამი კატები</h2>
 
-            <img src="img/katuna.png" alt="cat" width="350px" height="300px">
+            <img  src="img/katuna.png" alt="cat"  width="350px" height="300px">
             <span>ფოტო: ჰარლი</span>
 
             <p>სიამი კატები ცნობილია თავისი ლამაზი გარეგნობით და მეგობრული ხასიათით. ისინი ძალიან ჭკვიანები არიან და ხშირად ითვლებიან ერთ-ერთ ყველაზე ინტელექტუალურ კატებად. 
@@ -26,7 +63,7 @@
         <div>
             <h2>სიამის კატები</h2>
 
-            <img src="img/katuna.png" alt="cat" width="350px" height="300px">
+            <img src="img/katuna.png"  alt="cat"  width="350px" height="300px">
             <span>ფოტო: ჰარლი</span>
 
             <p>სიამი კატები ცნობილია თავისი ლამაზი გარეგნობით და მეგობრული ხასიათით. ისინი ძალიან ჭკვიანები არიან და ხშირად ითვლებიან ერთ-ერთ ყველაზე ინტელექტუალურ კატებად. 
@@ -37,7 +74,7 @@
         <div>
             <h2>სიამი კატები</h2>
 
-            <img src="img/katuna.png" alt="cat" width="350px" height="300px">
+            <img src="img/katuna.png" alt="cat"  width="350px" height="300px">
             <span>ფოტო: ჰარლი</span>
 
             <p>სიამი კატები ცნობილია თავისი ლამაზი გარეგნობით და მეგობრული ხასიათით. ისინი ძალიან ჭკვიანები არიან და ხშირად ითვლებიან ერთ-ერთ ყველაზე ინტელექტუალურ კატებად. 
@@ -50,10 +87,25 @@
     
     </section>
 
+    <table>
+       <tr>
+         <th>სახელი</th>
+         <th>ასაკი</th>
+         <th>სქესი</th>
+        </tr>
+        <tr>
+            <td>ჰარლი</td>
+            <td>2 წელი</td>
+            <td>კაცი</td>
+        </tr>
+
+
+    </table>
+
     <section>
         <div> 
             <h3> ჰარლი და ილონა </h3>
-            <img src="img/ilona.png" alt="moon" width="350px" height="300px"> <br/>
+            <img src="img/ilona.png"  alt="moon" width="350px"  height="300px"> <br/>
             <span>მეგობრები</span>
             <p>ჰარლი და ილონა საუკეთესო მეგობრები არიან. ისინი ერთად თამაშობენ, ჭამენ და სძინავთ. ჰარლი ძალიან უყვარს ილონა და ყოველთვის ცდილობს მასთან იყოს.</p>
 
@@ -62,31 +114,37 @@
        <h4> რაღაცეები <em>მეც კი არ ვიცი </em>  რა მაგრამ ხოომ არის ?</h4>
         <div> 
             <ul>
-                 <li><strong>ვიდეოები:</strong></li>
-                 <ol style="list-style-type:upper-roman">
-                        <li><i>დამწყები <b>დეველოპერის</b> ტკივილები</i></br>
-                           <video src="img/video.mp4" controls width="300px" height="250px" > </video>
-                        </li>
-                        <li> ნათია </li>
-                        <li> harliko </li>
-                        
-                    </ol>
+                <li>დამწყები დეველოპერების ტკივილი </br>
+                <video controls>
+                    <source src="img/video.mp4" type="video/mp4">
+                    
+                </video>
+                </li> </b>
+                <li> <audio controls>
 
-                 <li>ილონა მასკაია</li>
-                 <li>ჰარლი ასკილეისკირი </br>
-                    <audio controls>
                         <source src="img/BAILE INoLVIDABLE.mp3" type="audio/mpeg">
-                    </audio>
+                    </audio> </b>
+                    <span>მუსიკა</span>
                 </li>
+                <li>ჰარლი ყოველთვის მზად არის თამაშისთვის და სიამოვნებისთვის</li>
+                <li>ჰარლი არის ერთ-ერთი ყველაზე ლამაზი კატა, რომელიც მე ოდესმე მინახავს.</li>
 
             </ul>
             
         </div>
             
     </section>
-   
+    <section>
+        <p> Lorem ipsum <b> sit amet consectetur adipisicing elit. Officia</b> cupiditate accusantium earum quisquam voluptate ducimus eaque praesentium. Reprehenderit itaque suscipit 
+            eos voluptas ab!
+            <i>blanditiis eos qui vitae modi beatae.</i> 
+            <span>ჰარლი არის ძალიან საყვარელი კატა, რომელიც ძალიან უყვარს თავის პატრონს. ის ყოველთვის მზად არის თამაშისთვის და სიამოვნებისთვის. ჰარლი არის ერთ-ერთი ყველაზე ლამაზი კატა, 
+            რომელიც მე ოდესმე მინახავს..</span> 
+        </p>
+      
 
-    <footer>
+    </section>
+  <footer>
         <hr>
         <p> ჰარლის საკონტაქტო:</p>
         <img src="img/linkdini.png" alt="logo" width="30px" height="25px">
