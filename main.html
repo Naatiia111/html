@@ -8,24 +8,38 @@
 </head>
 <body>
    <header>
+        <a href="file:///C:/Users/mylaptop.ge/Desktop/html/main.html">
+         <img src="img/logo cat.webp" alt="კარის ლოგო" width="40px" height="40px"> 
+        </a>
        <h1>ჰარლი</h1>
+        <nav>
+            
+            <ul>
+                <li><a href="#home">ვიდეო</a></li>
+                <li><a href="#about">ჰარლი და ილონა</a></li>
+                <li><a href="#contact">კონტაქტი</a></li>
+                <li><a href="#friends">ჰარლი და მისი მეგობრები</a></li>
+            </ul>
+        </nav>
     </header>
+  <main>  
+     <!-- დაყავი სექციებად,აიქონებს უკეთესი სახელი, რადიო ბათანები დამაეტება და პატერნის დამატება.  -->
 
-    <div>
+     <div>
         <p> რეგისტრაცია </p>
         <form>
             <div>
-             <img src="img/person-male-svgrepo-com.svg" alt="icon" width="15px" height="15px">
+             <img src="img/person-male-svgrepo-com.svg" alt="iconName" width="15px" height="15px">
              <label for="name">სახელი:</label> <br/>
              <input type="text" placeholder= "შეიყვანეთ თქვენი სახელი" id="name"> <br/>
             </div>
             <div>
-             <img src="img/email-1-svgrepo-com.svg" alt="icon" width="20px" height="20px">
+             <img src="img/email-1-svgrepo-com.svg" alt="iconEmail" width="20px" height="20px">
              <label for="email">ელ-ფოსტა:</label> <br/>
              <input type="email" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა" id="email" required> <br/>
             </div>
             <div>
-                <img src="img/password-svgrepo-com.svg" alt="icon" width="20px" height="20px">
+                <img src="img/password-svgrepo-com.svg" alt="iconPassword" width="20px" height="20px">
              <label for="password">პაროლი:</label> <br/>
              <input type="password" placeholder="შეიყვანეთ თქვენი პაროლი" id="password" required minlength="1" maxlength="8"> <br/>
             </div>
@@ -49,9 +63,9 @@
 
         </form>
 
-    </div>
+      </div>
 
-    <section>
+     <section>
         <div>
             <h2>სიამი კატები</h2>
 
@@ -88,12 +102,12 @@
       
          
     
-    </section>
+     </section>
   
 
-    <section>
+     <section>
         <div> 
-            <h3> ჰარლი და ილონა </h3>
+            <h3 id="about"> ჰარლი და ილონა </h3>
             <img src="img/ilona.png"  alt="moon" width="350px"  height="300px"> 
             <span>მეგობრები</span>
             <p>ჰარლი და ილონა საუკეთესო მეგობრები არიან. ისინი ერთად თამაშობენ, ჭამენ და სძინავთ. ჰარლი ძალიან უყვარს ილონა და ყოველთვის ცდილობს მასთან იყოს.</p>
@@ -103,7 +117,7 @@
        <h4> რაღაცეები <em>მეც კი არ ვიცი </em>  რა მაგრამ ხოომ არის ?</h4>
         <div> 
             <ul>
-                <li>დამწყები დეველოპერების ტკივილი <br/>
+                <li id="home">დამწყები დეველოპერების ტკივილი <br/>
                   <video controls width="200px" height="250px">
                     <source src="img/video.mp4" type="video/mp4">
                     
@@ -122,8 +136,8 @@
             
         </div>
             
-    </section>
-    <section>
+     </section>
+     <section>
         <p> Lorem ipsum <b> sit amet consectetur adipisicing elit. Officia</b> cupiditate accusantium earum quisquam voluptate ducimus eaque praesentium. Reprehenderit itaque suscipit 
             eos voluptas ab!
             <i>blanditiis eos qui vitae modi beatae.</i> 
@@ -132,10 +146,11 @@
         </p>
       
 
-    </section>
-    <h4>ჰარლი და მისი მეგობრები</h4>
-     <table border="1">
-       <thead>
+     </section>
+      
+        <h4>ჰარლი და მისი მეგობრები</h4>
+        <table border="1" id="friends">
+        <thead>
           <tr>
             <th>N</th>
             <th>სახელი</th>
@@ -173,21 +188,19 @@
             </tr>
        </tbody>
         
-    </table>
-    <br/>
+      </table>
+      <br/>
+   </main> 
+   
   <footer>
         <hr>
-        <p> ჰარლის საკონტაქტო:</p>
+        <p id="contact"> საკონტაქტო:</p>
         <img src="img/linkdini.png" alt="logo" width="30px" height="25px">
         
          <a href="https://www.linkedin.com/in/natia-askileiskiri-51751733a/" target="_blank" rel="noopener">linkdin</a>
 
 
 
-    </footer>
-
-    
-
-       
+    </footer>  
 </body>
 </html>
