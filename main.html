@@ -9,13 +9,13 @@
 <body>
    <header>
         <a href="file:///C:/Users/mylaptop.ge/Desktop/html/main.html">
-         <img src="img/logo cat.webp" alt="კარის ლოგო" width="40px" height="40px"> 
+         <img src="img/logo cat.webp" alt="კარის ლოგო" width="50px" height="50px"> 
         </a>
        <h1>ჰარლი</h1>
         <nav>
             
             <ul>
-                <li><a href="#home">ვიდეო</a></li>
+                <li><a href="#video">ვიდეო</a></li>
                 <li><a href="#about">ჰარლი და ილონა</a></li>
                 <li><a href="#contact">კონტაქტი</a></li>
                 <li><a href="#friends">ჰარლი და მისი მეგობრები</a></li>
@@ -43,13 +43,17 @@
              <label for="password">პაროლი:</label> <br/>
              <input type="password" placeholder="შეიყვანეთ თქვენი პაროლი" id="password" required minlength="1" maxlength="8"> <br/>
             </div>
+        
             <div>
-             <input type="checkbox" id="agree" required>
-             <label for="agree">ვეთანხმები წესებს და პირობებს</label> <br/>
+             <input type="radio" id="female" name="gender" required>
+              <label for="female">ქალი</label>
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">კაცი</label>
             </div>
+
             <div>
-               <label for="cuntry">ქვეყანა:</label> 
-                <select id="cuntry" name="ქვეანა" required>
+               <label for="country">ქვეყანა:</label> 
+                <select id="country" name="ქვეყანა" required>
                  <option value="" disabled selected>ქვეყანა</option>
                  <option value="geo" >საქართველო</option>
                  <option value="esp" > ესპანეთი</option>
@@ -57,6 +61,10 @@
 
                 </select> 
               <br/>
+              <div>
+                  <input type="checkbox" id="agree" required>
+                 <label for="agree">ვეთანხმები წესებს და პირობებს</label> <br/>
+               </div>
              <br/> 
             </div>
             <button type="submit">რეგისტრაცია</button>
@@ -117,7 +125,7 @@
        <h4> რაღაცეები <em>მეც კი არ ვიცი </em>  რა მაგრამ ხოომ არის ?</h4>
         <div> 
             <ul>
-                <li id="home">დამწყები დეველოპერების ტკივილი <br/>
+                <li id="video">დამწყები დეველოპერების ტკივილი <br/>
                   <video controls width="200px" height="250px">
                     <source src="img/video.mp4" type="video/mp4">
                     
